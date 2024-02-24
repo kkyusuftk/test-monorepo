@@ -1,4 +1,4 @@
-name: Blade Release
+name: test-monorepo Release
 
 on:
   workflow_dispatch:
