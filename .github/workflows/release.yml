@@ -1,9 +1,9 @@
-name: Blade Release
+name: test-monorepo Release
 
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [adding-workflows]
 
 env:
   GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -21,6 +21,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.12.1
+      - name: Install Dependencies
+        run: npm install
       - name: Create Release Pull Request & Publish packages
         id: changesets
         uses: changesets/action@v1
