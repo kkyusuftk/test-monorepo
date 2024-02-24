@@ -3,7 +3,7 @@ name: Blade Release
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [adding-workflows]
 
 env:
   GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
