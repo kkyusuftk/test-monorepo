@@ -21,6 +21,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.12.1
+      - name: Install Dependencies
+        run: npm ci
       - name: Create Release Pull Request & Publish packages
         id: changesets
         uses: changesets/action@v1
