@@ -3,7 +3,7 @@ name: test-monorepo Release
 on:
   workflow_dispatch:
   push:
-    branches: [adding-workflows]
+    branches: [main]
 
 env:
   GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
