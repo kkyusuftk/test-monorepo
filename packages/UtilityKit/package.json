@@ -3,7 +3,14 @@
   "description": "The utility library for test",
   "version": "0.0.1",
   "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kkyusuftk/test-monorepo.git"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc -c tsconfig.json"
+    "build": "tsc"
   }
 }
