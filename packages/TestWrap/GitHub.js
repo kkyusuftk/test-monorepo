@@ -1,5 +1,5 @@
 const { Octokit } = require("@octokit/core");
-const octokit = new Octokit({ auth: "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" });
+const octokit = new Octokit({ auth: "" });
 
 async function getOpenPRsWithChanges(owner, repo, paths) {
   try {
