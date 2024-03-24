@@ -30,11 +30,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          publish: npm release
+          publish: npm run publish
           commit: 'build(test-monorepo): update version'
           title: 'build(test-monorepo): update version'
-      - name: Publish to public npm registry
-        if: steps.changesets.outputs.published == 'true' || github.event_name == 'workflow_dispatch' # run when the package is published via changeset or if a release is triggered manually.
-        run: yarn publish-npm
 
           

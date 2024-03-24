@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "build:testing": "nx run @kkyusuftk/testing:build",
-    "release:testing": "nx run @kkyusuftk/testing:release",
+    "build:utilities": "nx run @kkyusuftk/utilities:build",
     "version": "changeset version",
-    "publish": "changeset publish"
+    "publish": "npm run build:testing && npm run build:utilities && changeset publish"
   },
   "private": true,
   "devDependencies": {
