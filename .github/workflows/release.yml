@@ -30,7 +30,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          publish: yarn release
+          publish: npm release
           commit: 'build(test-monorepo): update version'
           title: 'build(test-monorepo): update version'
       - name: Publish to public npm registry

@@ -1,8 +1,13 @@
 {
   "name": "test-monorepo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:testing": "nx run @kkyusuftk/testing:build",
+    "release:testing": "nx run @kkyusuftk/testing:release",
+    "version": "changeset version",
+    "publish": "changeset publish"
+  },
   "private": true,
   "devDependencies": {
     "@nx/js": "18.0.5",

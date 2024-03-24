@@ -1,11 +1,14 @@
 {
-  "name": "@test-monorepo/utilities",
+  "name": "@kkyusuftk/utilities",
   "description": "The utility library for test",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/kkyusuftk/test-monorepo.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "dist"
