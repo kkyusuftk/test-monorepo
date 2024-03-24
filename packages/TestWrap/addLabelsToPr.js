@@ -2,7 +2,7 @@ const { Octokit } = require('@octokit/rest');
 
 // Create an Octokit instance
 const octokit = new Octokit({
-    auth: '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' // Replace with your personal access token
+    auth: '' // Replace with your personal access token
 });
 
 // Function to assign labels to PR based on author
