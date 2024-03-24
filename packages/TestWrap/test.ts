@@ -1,8 +1,8 @@
-export const isTestEnvironment = (): boolean => {
+export const isWindowDefined = (): boolean => {
   if (typeof window !== 'undefined' && typeof window === 'object') {
-      return false;
+      return true;
   }
   else {
-      return true;
+      return false;
   }
 };
